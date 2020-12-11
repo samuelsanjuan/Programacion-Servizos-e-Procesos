@@ -16,18 +16,18 @@ public class Main {
         MensajeCaracteresPalabras mensaje1=new MensajeCaracteresPalabras(nLetras,nPalabras);
         TerceraUltimaPalabra mensaje2=new TerceraUltimaPalabra(p3,pLast);
 
-        p3.run();
-        nLetras.run();
-        nPalabras.run();
-        pLast.run();
+        p3.start();
+        nLetras.start();
+        nPalabras.start();
+        pLast.start();
 
         p3.join();
         nLetras.join();
         nPalabras.join();
         pLast.join();
 
-        mensaje1.run();
-        mensaje2.run();
+        mensaje1.start();
+        mensaje2.start();
 
     }
 }
